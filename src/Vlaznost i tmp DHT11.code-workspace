@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "Temp. i vlaznost DHT 11",
+			"path": ".."
+		},
+		{
+			"name": "Arduino vezba",
+			"path": "..\\..\\Arduino vezba"
+		},
+		{
+			"name": "Provera cod-a",
+			"path": "..\\..\\Provera cod-a"
+		}
+	],
+	"settings": {}
+}
