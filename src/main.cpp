@@ -27,23 +27,21 @@ for(i=0;i<3;i++){
 i=0;
 }*/
 
-void setup(){
+void setup() {
 
   Serial.begin(9600);
   Serial.println(F("DHTxx test"));
   delay(1200);
-  dht.begin();                //DHT.begin();
+  dht.begin(); //DHT.begin();
   DISP.begin(16,2);
   DISP.clear();
-  
- 
-  }
+}
 
 
 void loop(){
 static float h; //vlaznost
 static float t ;  //temperatura
-static float hindx; //osetna temperat
+static float hindx; //osetna temperatura
  
 float variable_values[3]{h,t,hindx};// Inicirati varijable null
 char * variable_names[]{"humidity","temperature", "Heat index"}; /*Koji tip stringa?, mora local scope
@@ -62,7 +60,7 @@ dtostrf(variable_values[i],6,3,stringbuffer_values);// Koliki treba buffer da mi
  for(i=0;i<3;i++){
 Serial.println(variable_names[i]);
 Serial.println(variable_values[i]);
-Serial.println(i);
+Serial.println(i); // print brojaca.
 }
 i=0; 
  
